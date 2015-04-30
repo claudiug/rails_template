@@ -52,5 +52,23 @@ insert_into_file "spec/rails_helper.rb",
   config.after(:each) do
     DatabaseCleaner.clean
   end
+  
   CONTENT
 end
+
+insert_into_file "config/application.rb",
+after: "config.active_record.raise_in_transactional_callbacks = true\n" do
+  <<-CONTENT
+  config.generators do|g|
+        g.test_framework :rspec,
+          fixtures: true,
+          view_specs: false,
+          helper_specs: false,
+          routing_specs: true,
+          controller_specs: true,
+          request_specs: false
+        g.fixture_replacement :factory_girl, dir: "spec/factories"
+      end
+  CONTENT
+end
+
