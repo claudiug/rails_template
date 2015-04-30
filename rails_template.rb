@@ -3,6 +3,7 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'httparty'
 gem 'hamlit'
 gem 'therubyracer', platforms: :ruby
+gem "haml-rails", "~> 0.9"
 
 gem_group(:development, :test) do
     gem 'byebug'
