@@ -2,6 +2,7 @@ gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'httparty'
 gem 'hamlit'
+gem 'therubyracer', platforms: :ruby
 
 gem_group(:development, :test) do
     gem 'byebug'
