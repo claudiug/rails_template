@@ -1,6 +1,8 @@
 gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'httparty'
+gem 'hamlit'
+
 gem_group(:development, :test) do
     gem 'byebug'
     gem 'binding_of_caller'
