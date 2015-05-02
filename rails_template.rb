@@ -22,6 +22,7 @@ gem_group(:test) do
   gem 'webmock'
   gem 'poltergeist'
   gem 'faker'
+  gem 'factory_girl_rails'
 end
 
 run 'bundle'
