@@ -11,6 +11,7 @@ gem_group(:development, :test) do
     gem 'better_errors'
     gem 'quiet_assets'
     gem 'annotate'
+    gem 'spring-commands-rspec'
 end
 
 gem_group(:test) do
