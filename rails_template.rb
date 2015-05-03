@@ -7,6 +7,7 @@ gem "haml-rails", "~> 0.9"
 
 gem_group(:development, :test) do
     gem 'byebug'
+    gem 'awesome_print'
     gem 'binding_of_caller'
     gem 'better_errors'
     gem 'quiet_assets'
